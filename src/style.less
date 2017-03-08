@@ -1,0 +1,239 @@
+@import "style/main";
+.index {
+    background: #f5f5f5;
+    width: 100vw;
+    overflow-x: hidden;
+    i {
+        font-size: @default-font-size;
+    }
+    .header {
+        height: 20vw;
+        padding: 2vw 4vw 0;
+        background: #fff;
+        img {
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+        }
+        .help {
+            background: @primary-purple;
+            color: #fff;
+            padding: 2vw 3vw;
+            border-radius: 5px;
+            font-size: @default-font-size;
+        }
+        i {
+            color: #C1C1C1;
+            position: relative;
+            top: 1vw;
+        }
+    }
+    .ad-img-list {
+        background: #fff;
+        width: 100vw;
+        height: 50vw;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            opacity: .15;
+            background: #854399;
+            width: 100vw;
+            height: 15%;
+            bottom: 0;
+            z-index: 11;
+        }
+        img {
+            width: 100vw;
+            height: 50vw;
+        }
+    }
+    .menu {
+        padding: 4vw 0;
+        background: #fff;
+        div {
+            line-height: 6vw;
+        }
+        i {
+            color: #211613;
+            ;
+            font-size: 1.2rem;
+            // font-weight: bold;
+        }
+        span {
+            color: #333;
+            font-size: @default-font-size;
+        }
+    }
+    .financial {
+        margin-top: 3vw;
+        background: #fff;
+        position: relative;
+        .title {
+            padding: 4vw 0 0;
+        }
+        .financial-top {
+            margin-left: 9vw;
+            font-size: @small-font-size;
+            .date {
+                color: #919191;
+            }
+        }
+        .financial-info {
+            padding: 4vw 0;
+            .financial-summary {
+                color: #000;
+                font-size: 1.6rem;
+            }
+            span {
+                color: #6A6A6A;
+                font-size: @default-font-size;
+            }
+        }
+        i {
+            color: #A5D688;
+            font-size: 2.2rem;
+            position: absolute;
+            top: 3.5vw;
+        }
+        .get-financial-btn {
+            text-align: center;
+            color: @primary-purple;
+            border-top: 1px solid #E8E8E8;
+            padding: 3vw 0;
+            font-size: @default-font-size;
+        }
+    }
+    .plan-list {
+        background: #fff;
+        margin-top: 3vw;
+        padding-bottom: 6vw;
+        .plan-list-top {
+            padding: 3vw 0 0 1vw;
+            .title {
+                color: #6A6A6A;
+                font-size: @small-font-size;
+                margin-left: 1vw;
+            }
+            i {
+                position: relative;
+                font-size: 1.6rem;
+                top: 1vw;
+            }
+        }
+        .wechat {
+            background: url(images/sales-wechat.png);
+        }
+        .sms {
+            background: url(images/sms-message.png);
+        }
+        .sales {
+            background: url(images/sales.png);
+        }
+        .shopping {
+            background: url(images/shopping.png);
+        }
+        .plan-item {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 23vw;
+            margin-top: 3vw;
+            position: relative;
+            border-radius: 5px;
+            color: #fff;
+            line-height: 4.5vw;
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                opacity: .2;
+                background: #000;
+                top: 0;
+                border-radius: 5px;
+            }
+            .text {
+                font-size: @default-font-size;
+            }
+            .count {
+                font-size: .7rem;
+            }
+        }
+    }
+    .pay {
+        background: #fff;
+        margin-top: 1vw;
+        padding: 5vw 0;
+        font-size: @small-font-size;
+        i {
+            font-size: 1.2rem;
+        }
+        .how-open-pay {
+            color: @primary-purple;
+        }
+        .qq-show {
+            color: #333;
+        }
+    }
+    .message,
+    .record {
+        margin-top: 3vw;
+        background: #fff;
+        .new-message,
+        .last-record {
+            font-size: @default-font-size;
+            padding: 3vw 0;
+            i {
+                color: #919191;
+                font-size: 1.2rem;
+                position: relative;
+                top: 1vw;
+            }
+        }
+        .message-info,
+        .last-record-info {
+            font-size: @small-font-size;
+            color: #6A6A6A;
+            padding: 5vw 0;
+            img {
+                width: 10vw;
+                height: 10vw;
+                border-radius: 50%;
+                margin-right: 2vw;
+            }
+            i {
+                font-size: 1.4rem;
+                position: relative;
+                top: .5vw;
+                color: #C1C1C1;
+            }
+            .last-record-date {
+                color: #6A6A6A;
+                margin-left: 2vw;
+            }
+            .last-record-price {
+                color: #333;
+                margin-left: 5vw;
+            }
+        }
+    }
+    .copyright {
+        font-size: @small-font-size;
+        color: #DDDDDD;
+        text-align: center;
+        padding: 1vw 0;
+    }
+    //重写
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: .5vw;
+        display: inline-block;
+        background: #C1C1C1;
+        border-radius: 0;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #A5D688;
+        opacity: 1;
+    }
+}
